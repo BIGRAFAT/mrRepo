@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap');
+
 :root {
-    --primary-color: #007AF3
+    --primary-color: #007AF3;
+    --secondary-color: #006bd6;
 }
 
 body {
     background: #F2F2F2;
     margin: 0;
-    font-family:'Poppins';
+    font-family: 'Poppins';
 }
 
 .navbar {
@@ -21,7 +23,6 @@ body {
 
         span {
             color: var(--primary-color);
-
         }
     }
 
@@ -37,7 +38,6 @@ body {
     .mobile-menu {
         cursor: pointer;
     }
-    
 }
 
 a {
@@ -45,9 +45,9 @@ a {
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+   list-style-type: none; 
+   margin: 0;
+   padding: 0;
 }
 
 section {
@@ -59,13 +59,12 @@ section {
 }
 
 .left-col {
-    
+
     .subhead {
         text-transform: uppercase;
         font-weight: bold;
         color: gray;
         letter-spacing: .3em;
-
     }
 
     h1 {
@@ -75,20 +74,20 @@ section {
     }
 
     .primary-cta {
-        background-color: var(--primary-color);
+        background: var(--primary-color);
         color: white;
         text-decoration: none;
         padding: .6em 1.3em;
+        font-size: 1.4em;
         border-radius: 5em;
         font-weight: bold;
         display: inline-block;
-
-
     }
 
     .watch-video-cta {
         display: block;
         margin-top: 1em;
+
         img {
             margin-right: .5em;
         }
@@ -108,53 +107,53 @@ section.features-section {
 ul.features-list {
     margin: 0;
     padding-left: .1em;
-    //asdasdasd
-}
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 
-li{
-    font-size: 1.1em;
-    margin-bottom: 1em;
-    margin-left: 2em;
-    position: relative;
+    li {
+        font-size: 1.1em;
+        margin-bottom: 1em;
+        margin-left: 2em;
+        position: relative;
 
-    &:before {
-        content: '';
-        left: -2em;
-        position: absolute;
-        width: 20px;
-        height: 20px;
-        background-image: url('../images/bullet.svg');
-        background-size: contain;
-        margin-right: .5em;
-
+        &:before {
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+        }
     }
 }
 
-.features-section img{
+.features-section img {
     display: none;
 }
 
-.testimonials-section{
+.testimonials-section {
     background: var(--primary-color);
     color: white;
 
     li {
-        background: #006bd6;
+        background: #006BD6;
         text-align: center;
         padding: 2em 1em;
         width: 80%;
         margin: 0 auto 5em auto;
         border-radius: 1em;
-        
+
         img {
             width: 5em;
             height: 5em;
-            border: 5px solid #006bd6;
+            border: 5px solid #006BD6;
             border-radius: 50%;
             margin-top: -4.5em;
         }
-
     }
+
 }
 
 h2 {
@@ -165,10 +164,9 @@ label {
     display: block;
     font-size: 1.2em;
     margin-bottom: .5em;
-
 }
 
-imput, textarea {
+input, textarea {
     width: 100%;
     padding: .8em;
     margin-bottom: 1em;
@@ -189,10 +187,10 @@ input[type="submit"] {
     padding: .8em 2em;
     width: unset;
     cursor: pointer;
-
 }
 
-iframe { 
+iframe {
     width: 100%;
     height: 300px;
 }
+
